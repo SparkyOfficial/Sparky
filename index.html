@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrey Budilnikov - Digital Revolutionary & Creative Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Matrix Rain Background -->
+    <canvas id="matrix-canvas"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="glitch" data-text="SPARKY">SPARKY</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero">Главная</a></li>
+                <li><a href="#about">О себе</a></li>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#achievements">Достижения</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-avatar">
+                <div class="avatar-container">
+                    <div class="minecraft-head">
+                        <div class="face front"></div>
+                        <div class="face back"></div>
+                        <div class="face right"></div>
+                        <div class="face left"></div>
+                        <div class="face top"></div>
+                        <div class="face bottom"></div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="hero-title">
+                <span class="typing-text" data-text="Andrey Budilnikov"></span>
+            </h1>
+            <div class="hero-subtitle">
+                <span class="subtitle-line">Креативный разработчик</span>
+                <span class="subtitle-line">Контент-креатор</span>
+                <span class="subtitle-line">Цифровой революционер</span>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">193</span>
+                    <span class="stat-label">см роста</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">чашек кофе</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">64</span>
+                    <span class="stat-label">кбит/с в Discord</span>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('projects')">
+                    <i class="fas fa-rocket"></i> Мои проекты
+                </button>
+                <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                    <i class="fab fa-telegram"></i> Связаться
+                </button>
+            </div>
+        </div>
+        <div class="hero-bg">
+            <div class="floating-icons">
+                <i class="fab fa-java"></i>
+                <i class="fas fa-cube"></i>
+                <i class="fab fa-discord"></i>
+                <i class="fab fa-github"></i>
+                <i class="fas fa-code"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="glitch" data-text="О СЕБЕ">О СЕБЕ</span>
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="btn-close"></span>
+                                <span class="btn-minimize"></span>
+                                <span class="btn-maximize"></span>
+                            </div>
+                            <div class="terminal-title">sparky@digital-revolution:~$</div>
+                        </div>
+                        <div class="terminal-body">
+                            <p><span class="prompt">$</span> whoami</p>
+                            <p class="output">Креативный разработчик, контент-креатор и общественный деятель в цифровой среде.</p>
+                            
+                            <p><span class="prompt">$</span> cat experience.txt</p>
+                            <p class="output">• Создание и ведение онлайн-проектов<br>
+                            • Управление сообществами<br>
+                            • Разработка Minecraft-плагинов<br>
+                            • Визуальные системы программирования<br>
+                            • Исследование взаимодействия игровых миров и правовых концепций</p>
+                            
+                            <p><span class="prompt">$</span> ls -la personality/</p>
+                            <p class="output">
+                            drwxr-xr-x creativity/<br>
+                            drwxr-xr-x leadership/<br>
+                            drwxr-xr-x analytics/<br>
+                            drwxr-xr-x ethics/<br>
+                            -rw-r--r-- mission.md<br>
+                            -rw-r--r-- goals.json
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-cards">
+                    <div class="info-card">
+                        <div class="card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h3>Локация</h3>
+                        <p>Луцк, Украина</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="card-icon"><i class="fas fa-cube"></i></div>
+                        <h3>Любимый блок</h3>
+                        <p>/setblock grass</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="card-icon"><i class="fas fa-coffee"></i></div>
+                        <h3>Кофе в день</h3>
+                        <p>0 → ∞ чашек</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="glitch" data-text="НАВЫКИ">НАВЫКИ</span>
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Программирование</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Kotlin</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C++</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git/GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-cube"></i>
+                        <h3>Minecraft Development</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Plugin Development</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="98%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Visual Programming</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Server Management</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="93%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-users"></i>
+                        <h3>Community Management</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Discord Servers</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="97%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Content Planning</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Moderation</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="94%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-gavel"></i>
+                        <h3>Аналитика и Право</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Virtual Courts</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="99%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Conflict Management</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="96%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Digital Rights</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="glitch" data-text="ПРОЕКТЫ">ПРОЕКТЫ</span>
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <h3>SparkyMagicRPG</h3>
+                        <span class="project-status active">Active</span>
+                    </div>
+                    <p class="project-description">
+                        Комплексный RPG плагин для Minecraft с системой магии, квестов и прогрессии персонажа.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Spigot API</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-sword"></i>
+                        </div>
+                        <h3>MLDuels</h3>
+                        <span class="project-status completed">Completed</span>
+                    </div>
+                    <p class="project-description">
+                        Система дуэлей с рейтингом, турнирами и кастомными аренами.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Bukkit</span>
+                        <span class="tech-tag">Redis</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-hammer"></i>
+                        </div>
+                        <h3>SparkyBetaCreative+</h3>
+                        <span class="project-status active">Active</span>
+                    </div>
+                    <p class="project-description">
+                        Расширенный креативный режим с визуальным программированием и продвинутыми инструментами.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Kotlin</span>
+                        <span class="tech-tag">Paper</span>
+                        <span class="tech-tag">GUI Framework</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-scroll"></i>
+                        </div>
+                        <h3>Конституція Спарки</h3>
+                        <span class="project-status legendary">Legendary</span>
+                    </div>
+                    <p class="project-description">
+                        Революционный документ, прошедший путь от альфа-теста в Minecraft до публичного релиза.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Legal Framework</span>
+                        <span class="tech-tag">Community Management</span>
+                        <span class="tech-tag">Digital Rights</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>ВСС-D</h3>
+                        <span class="project-status active">Active</span>
+                    </div>
+                    <p class="project-description">
+                        Виртуальное сообщество по защите цифровых прав и свобод в игровом пространстве.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Community Building</span>
+                        <span class="tech-tag">Digital Activism</span>
+                        <span class="tech-tag">Legal Advocacy</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>OpenHousing</h3>
+                        <span class="project-status development">In Development</span>
+                    </div>
+                    <p class="project-description">
+                        Открытая платформа для управления жилищными проектами и сообществами.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Web Development</span>
+                        <span class="tech-tag">Community Platform</span>
+                        <span class="tech-tag">Open Source</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="glitch" data-text="ДОСТИЖЕНИЯ">ДОСТИЖЕНИЯ</span>
+            </h2>
+            <div class="achievements-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Победа в виртуальном суде</h3>
+                        <p>Выиграл у BalDusa моральную компенсацию лайками в эпическом судебном процессе</p>
+                        <span class="timeline-date">2023</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-scroll"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Создание Конституції Спарки</h3>
+                        <p>Разработка и внедрение революционного правового документа для виртуального сообщества</p>
+                        <span class="timeline-date">2022-2023</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Создатель и разрушитель лоров</h3>
+                        <p>Мастерское владение нарративными структурами в игровых мирах</p>
+                        <span class="timeline-date">2021-2023</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>PhD по конфликтам Creative+ и Mineland</h3>
+                        <p>Глубокое исследование межсерверных конфликтов и их разрешение</p>
+                        <span class="timeline-date">2024-2025</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Основание ВСС-D</h3>
+                        <p>Создание влиятельной организации по защите цифровых прав</p>
+                        <span class="timeline-date">2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="glitch" data-text="ОБРАЗОВАНИЕ">ОБРАЗОВАНИЕ</span>
+            </h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>Академия цифровой независимости</h3>
+                    <p>Специализация: Цифровые права и виртуальная юриспруденция</p>
+                    <span class="education-status">Graduated</span>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Колледж конфликтов серверных администраций</h3>
+                    <p>Специализация: Медиация и разрешение виртуальных споров</p>
+                    <span class="education-status">Graduated</span>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Онлайн-университет мемо-политических трансформаций</h3>
+                    <p>Специализация: Культурная аналитика и социальные медиа</p>
+                    <span class="education-status">Graduated</span>
+                </div>
+
+                <div class="education-card phd">
+                    <div class="education-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>PhD по конфликтам Creative+ и Mineland</h3>
+                    <p>Диссертация: "Виртуальная юриспруденция в контексте игровых серверов"</p>
+                    <span class="education-status phd-status">PhD</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="glitch" data-text="КОНТАКТЫ">КОНТАКТЫ</span>
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <h3>Telegram</h3>
+                        <p>@AndreyBudilnikov</p>
+                        <a href="https://t.me/AndreyBudilnikov" class="contact-link">Написать</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <h3>Канал</h3>
+                        <p>sparkyofc</p>
+                        <a href="https://t.me/sparkyofc" class="contact-link">Подписаться</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <h3>Архив</h3>
+                        <p>sparkybiography</p>
+                        <a href="https://t.me/sparkybiography" class="contact-link">Изучить</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-discord"></i>
+                        </div>
+                        <h3>Discord</h3>
+                        <p>sparkyofficial</p>
+                        <a href="#" class="contact-link">Добавить</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3>GitHub</h3>
+                        <p>SparkyOfficial</p>
+                        <a href="https://github.com/SparkyOfficial" class="contact-link">Посетить</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <h3>YouTube</h3>
+                        <p>SparkyOfficialYouTube</p>
+                        <a href="https://www.youtube.com/@SparkyOfficialYouTube" class="contact-link">Подписаться</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-discord"></i>
+                        </div>
+                        <h3>Discord Сервер</h3>
+                        <p>Официальное сообщество</p>
+                        <a href="https://discord.gg/gz8KUkWWMj" class="contact-link">Присоединиться</a>
+                    </div>
+                </div>
+
+                <div class="contact-mission">
+                    <div class="mission-card">
+                        <h3><i class="fas fa-bullseye"></i> Миссия</h3>
+                        <ul>
+                            <li>Защита интересов и цифровых прав</li>
+                            <li>Создание уникальных игровых и образовательных проектов</li>
+                            <li>Распространение правды и публичная деятельность</li>
+                            <li>Быть полноправным субъектом в виртуальном и реальном пространстве</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="glitch" data-text="SPARKY">SPARKY</span>
+                    <p>Цифровой революционер и защитник виртуальных прав</p>
+                </div>
+                <div class="footer-stats">
+                    <div class="footer-stat">
+                        <span class="stat-number" id="coffee-counter">0</span>
+                        <span class="stat-label">чашек кофе выпито</span>
+                    </div>
+                    <div class="footer-stat">
+                        <span class="stat-number" id="drama-level">42</span>
+                        <span class="stat-label">уровень драмы</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Andrey Budilnikov. Все права защищены Конституцією Спарки.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
