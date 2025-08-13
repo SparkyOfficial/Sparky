@@ -372,7 +372,7 @@ window.addEventListener('load', () => {
 
 // Meme quotes rotation
 const memeQuotes = [
-    "Конституція Спарки > Конституция Украины",
+    "Конституція Спарки < Конституция Украины",
     "64 кбит/с - это не баг, это фича",
     "/setblock grass - команда жизни",
     "BalDusa до сих пор должен лайки",
